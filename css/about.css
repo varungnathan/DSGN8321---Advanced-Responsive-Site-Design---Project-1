@@ -1,0 +1,234 @@
+/* DSGN8321 - Advanced Responsive Site Design - Project 1 - AI
+Varun Gopinath - 8929281 */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff; /* Light background for minimalism */
+    color: #333; /* Dark gray text for readability */
+}
+
+h1 {
+    font-family: "Libre Baskerville", serif;
+  font-weight: bold;
+  font-style: italic;
+
+}
+
+#logo {
+    width: 120px; 
+    height: auto;
+    margin-right: 20px;
+}
+
+header {
+    display: flex; /* Use Flexbox */
+    justify-content: flex-start; /* Align items to the start (left) */
+    align-items: center; /* Center vertically */
+    padding: 0px;
+    background-color: #fafafa; /* Slightly off-white for the header */
+}
+
+#Heading {
+    text-align: center;
+    margin: 0; 
+}
+
+header img {
+    width: 100px; /* Adjusted for a cleaner look */
+    height: auto;
+    margin-top: 0px;
+}
+
+#intro {
+    font-family: "Libre Baskerville", serif;
+    font-size: 75px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white; /* Change text color to white */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to text */
+    -webkit-text-stroke: 1px black; /* Add stroke color to text for compatibility with webkit browsers */
+
+}
+
+.hero {
+    background-image: url('../img/heroimage.webp');
+    color: #961010;
+    height: 250px; /* Smaller hero section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    opacity: 0.80 ;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #eeeeee; /* Light gray for nav */
+    margin: 0;
+}
+
+nav ul li {
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-family: "Libre Baskerville", serif;
+    font-weight: bold;
+}
+
+#website-info {
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9; /* Light background color for the section */
+    border-bottom: 1px solid #ddd; /* Border to separate from grid section */
+}
+
+#website-info h2 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#website-info p {
+    font-family: "Libre Baskerville", serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333; /* Dark text color */
+
+}
+
+.our-mission {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Adjusted to give equal space to image and text */
+    gap: 20px; /* Space between the image and the text */
+    max-width: 900px; /* Reduced maximum width of the section for a narrower layout */
+    margin: auto; /* Center the section */
+    padding: 20px; /* Adjusted padding around the content for a tighter layout */
+}
+
+.mission-image img {
+    width: 100%; /* Ensure the image fills its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.mission-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the text in the container */
+}
+
+.mission-text h2, .mission-text p {
+    margin-bottom: 10px; /* Reduced spacing for a tighter layout */
+    font-family: "Libre Baskerville", serif;
+}
+
+.mission-text h2 {
+    font-size: 22px; /* Slightly smaller heading for consistency with the reduced layout */
+}
+
+.mission-text p {
+    font-size: 15px; /* Slightly smaller text for overall consistency */
+    line-height: 1.5; /* Adjusted line spacing for the smaller font size */
+    font-style: italic;
+    text-align: justify;
+}
+
+#meet {
+    font-family: "Libre Baskerville", serif;
+}
+.team-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; /* Space between team members */
+}
+
+.team-member {
+    flex-basis: calc(25% - 20px); /* Four members per row minus gap */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px); /* Simple hover effect */
+}
+
+.team-member img {
+    width: 100%; /* Adjust as needed */
+    height: auto;
+    border-radius: 50%; /* Circular images */
+}
+
+.team-member h3{
+    margin: 10px 0;
+    font-size: medium;
+    font-family: "Libre Baskerville", serif;
+}
+.team-member p {
+    margin: 10px 0;
+    font-size: small;
+    font-style: italic;
+    font-family: "Libre Baskerville", serif;
+}
+
+.video-section {
+    text-align: center;
+    margin: 20px 0;
+    font-family: "Libre Baskerville", serif;
+}
+
+.video-container {
+    position: relative;
+    padding-top: 30%; /* Adjusted from 56.25% to reduce the vertical space it occupies, changing the aspect ratio */
+    height: 0;
+    max-width: 1280px; /* Ensures the video does not exceed this width */
+    margin: auto; /* Centers the container */
+}
+
+.video-container iframe {
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#videosentence {
+    margin-left: 30px;
+    margin-right: 30px;
+    line-height: 1.9;
+    font-size: 15px;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5; /* Light footer background */
+    margin-top: 20px;
+}
+
+#copyright {
+    font-family: "Libre Baskerville", serif;
+    font-style: italic;
+    font-size: small;
+    font-weight: bold;
+}

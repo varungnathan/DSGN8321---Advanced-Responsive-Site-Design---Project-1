@@ -1,0 +1,138 @@
+<!-- DSGN8321 - Advanced Responsive Site Design - Project 1 - AI
+Varun Gopinath - 8929281 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tale Trails - Home</title>
+    <link rel="icon" type="image/png" href="../img/favlogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+    <header>
+     <a href="home.html">   <img src="../img/logo-transparent.png" alt="Tale Trail Logo" id="logo"></a> 
+        <h1>Tale Trail</h1>
+    </header>    
+    <div class="hero">
+        <h2 id="intro">Welcome to Tale Trail. A world of Imagination</h2>
+    </div>
+    <nav>   
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./services.html">Our Services</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="website-info">
+            <h2>Welcome to Tale Trails</h2>
+            <p id="infoweb">Tale Trail offers a vibrant exploration into the world of literature, providing both online and offline access to an extensive collection of short stories, novels, and various literary pieces. Immerse yourself in enthralling narratives, uncover new authors, and connect with a community of readers through reviews, discussions, and direct interactions with authors, all while enjoying the flexibility of engaging with our content both digitally and in-person.</p>
+        </section>
+        <h2 id="story-trend">Trending Short Stories</h2>
+        <section class="featured-stories">
+            <div class="story">
+                <img src="../img/Story.webp" alt="A solitary street lamp illuminates a desolate urban landscape, casting light amidst the ruins under a brooding sky.">
+                    <!-- OpenAI. (2024). Dall E. [Large language model]. https://openai.com/dall-e-2 -->
+                <h3 id="story-name">The Last Light in a Dying City</h3>
+                <h4 id="story-genre">Horror</h4>
+                <p id="story-explanation"> Imagine a city on the brink of collapse, where the last source of light symbolizes hope amid darkness</p>
+            </div>
+            <div class="story">
+                <img src="../img/Story 2.webp" alt="A spaceship zooms through a vibrant, star-studded galaxy, leaving a trail of light that captures the essence of cosmic travel.">
+                <!-- OpenAI. (2024). Dall E. [Large language model]. https://openai.com/dall-e-2 -->
+                <h3 id="story-name">A Voyage Beyond the Stars</h3>
+                <h4 id="story-genre">Sci-Fi</h4>
+                <p id="story-explanation">A journey across the galaxy where travelers encounter alien worlds, cosmic phenomena, and the mysteries of the universe</p>
+            </div>
+            <div class="story">
+                <img src="../img/Story 3.webp" alt="An antique room filled with diverse clocks, lit by a window, evoking a sense of history and time.">
+                <!-- OpenAI. (2024). Dall E. [Large language model]. https://openai.com/dall-e-2 -->
+                <h3 id="story-name">The Clockmaker's Secret</h3>
+                <h4 id="story-genre">Mystery</h4>
+                <p id="story-explanation">In a town where time behaves strangely, a clockmaker possesses the key to unraveling the mystery</p>
+            </div>
+        </section> 
+        <section id="newsletter-signup">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Stay up-to-date with the latest releases, author interviews, and exclusive content.</p>
+            <form>
+                <input type="text" id="name" placeholder="Enter your name">
+                <input type="email" id="email" placeholder="Enter your email">
+                <button type="submit" id="subscribe-btn">Subscribe</button>
+            </form>            
+        </section>  
+        <div class="flex-container">
+            <section id="author-spotlight">
+                <h2>Author Spotlight</h2>
+                <p>Discover talented authors and their latest works.</p>
+                <div class="author-profile">
+                    <h3>Alex Johnson</h3>
+                    <p>Featuring "The Echoes of Time" - a journey through the complexities of time and love.</p>
+                </div>
+                <div class="author-profile">
+                    <h3>Samira Hayek</h3>
+                    <p>Presenting "Whispers of the Desert" - an exploration of heritage and identity set against the backdrop of the vast Sahara.</p>
+                </div>
+                <div class="author-profile">
+                    <h3>Michael Chen</h3>
+                    <p>Introducing "Beyond the Horizon" - a sci-fi adventure that challenges the bounds of human imagination and technology.</p>
+                </div>
+                <div class="author-profile">
+                    <h3>Isabella Wright</h3>
+                    <p>Revealing "Shadows of the Past" - a historical fiction that uncovers the secrets of a mysterious family lineage.</p>
+                </div>
+                <div class="author-profile">
+                    <h3>Lucas Martins</h3>
+                    <p>Spotlighting "Echoes of the Rainforest" - an environmental thriller that delves into the heart of the Amazon.</p>
+                </div>
+                <div class="author-profile">
+                    <h3>Tom Jobs</h3>
+                    <p>Featuring "Whispers in the Wind" - a captivating mystery set amidst the sprawling vineyards of Tuscany, where secrets from the past intertwine with the present, challenging the bonds of family and love.</p>
+                </div>
+            </section>
+            <div class="divider"></div>
+            <section id="events-calendar">
+                <h2>Literary Events Calendar</h2>
+                <div class="event">
+                    <h3>Book Fair</h3>
+                    <p>Date: September 15, 2024</p>
+                    <p>Time: 10:00 AM - 07: PM (EST)</p>
+                    <p>Location: Central Library, Kitchener Community Center</p>
+                </div>
+                <div class="event">
+                    <h3>Author Reading</h3>
+                    <p>Date: October 5, 2024</p>
+                    <p>Time: 10:00 AM - 05:00 PM (EST)</p>
+                    <p>Location: Bookworms Bookstore, Cambridge</p>
+                </div>
+                <div class="event">
+                    <h3>Literary Festival</h3>
+                    <p>Date: November 20, 2024</p>
+                    <p>Time: 09:00 AM - 05:00 PM (EST)</p>
+                    <p>Location: City Hall, Waterloo</p>
+                </div>
+                <div class="event">
+                    <h3>Writer's Workshop</h3>
+                    <p>Date: December 10, 2024</p>
+                    <p>Time: 10:00 AM - 07: PM (EST)</p>
+                    <p>Location: Writer's Guild, Guelph</p>
+                </div>
+                <div class="event">
+                    <h3>Book Signing</h3>
+                    <p>Date: December 18, 2024</p>
+                    <p>Time: 12:00 AM - 09:00 PM (EST)</p>
+                    <p>Location: Chapters Bookstore, Hamilton</p>
+                </div>
+            </section>
+        </div>     
+    </main>
+    <footer>
+        <p id="copyright">&copy; 2024 Tale Trail. All rights reserved. Varun Gopinath - 8929281</p>
+    </footer>
+</body>
+</html>

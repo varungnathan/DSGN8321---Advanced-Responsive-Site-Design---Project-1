@@ -1,0 +1,332 @@
+/* DSGN8321 - Advanced Responsive Site Design - Project 1 - AI
+Varun Gopinath - 8929281 */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff; /* Light background for minimalism */
+    color: #333; /* Dark gray text for readability */
+}
+
+h1 {
+    font-family: "Libre Baskerville", serif;
+  font-weight: bold;
+  font-style: italic;
+
+}
+
+#logo {
+    width: 120px; 
+    height: auto;
+    margin-right: 20px;
+}
+
+header {
+    display: flex; /* Use Flexbox */
+    justify-content: flex-start; /* Align items to the start (left) */
+    align-items: center; /* Center vertically */
+    padding: 0px;
+    background-color: #fafafa; /* Slightly off-white for the header */
+}
+
+#Heading {
+    text-align: center;
+    margin: 0; 
+}
+
+header img {
+    width: 100px; /* Adjusted for a cleaner look */
+    height: auto;
+    margin-top: 0px;
+}
+
+#intro {
+    font-family: "Libre Baskerville", serif;
+    font-size: 75px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white; /* Change text color to white */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to text */
+    -webkit-text-stroke: 1px black; /* Add stroke color to text for compatibility with webkit browsers */
+
+}
+
+.hero {
+    background-image: url('../img/heroimage.webp');
+    color: #333;
+    height: 250px; /* Smaller hero section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    opacity: 0.80 ;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #eeeeee; /* Light gray for nav */
+    margin: 0;
+}
+
+nav ul li {
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-family: "Libre Baskerville", serif;
+    font-weight: bold;
+}
+
+#website-info {
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9; /* Light background color for the section */
+    border-bottom: 1px solid #ddd; /* Border to separate from grid section */
+}
+
+#website-info h2 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#website-info p {
+    font-family: "Libre Baskerville", serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333; /* Dark text color */
+
+}
+
+#newsletter-signup {
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9; /* Light background color for the section */
+}
+#name, #email, #subscribe-btn {
+    font-family: "Libre Baskerville", serif;
+    font-style: italic;
+}
+
+#newsletter-signup h2 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#newsletter-signup p {
+    font-family: "Libre Baskerville", serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333; /* Dark text color */
+}
+
+#newsletter-signup form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow form elements to wrap to new line if necessary */
+    margin-top: 20px;
+}
+
+#newsletter-signup input[type="text"],
+#newsletter-signup input[type="email"],
+#newsletter-signup button {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#newsletter-signup input[type="text"],
+#newsletter-signup input[type="email"] {
+    flex: 1; /* Make input fields flexible to expand and fill available space */
+    max-width: 300px; /* Limit maximum width of input fields */
+}
+
+#newsletter-signup button {
+    background-color: #ddaa59; /* Blue background color for the button */
+    color: #fff; /* White text color for the button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#newsletter-signup button:hover {
+    background-color: #493920; /* Darker shade of blue on hover */
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Align items with space between them */
+    flex-wrap: wrap; /* Allow flex items to wrap to new line */
+    max-width: 1000px; /* Limit max width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+
+#newsletter-signup,
+#events-calendar {
+    flex: 1; /* Flexbox property to occupy equal space */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color */
+    margin-bottom: 20px; /* Add space between sections */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.event {
+    margin-bottom: 20px;
+}
+
+#events-calendar p{
+    font-family: "Libre Baskerville", serif;
+}
+
+.featured-stories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px; /* This is the existing vertical padding */
+    padding-left: 120px; /* This adds padding on the left */
+    padding-right: 10px; /* This adds padding on the right */
+    box-sizing: border-box; /* This makes sure padding is included in the element's total width */
+}
+
+.story {
+    width: calc(75% - 10px); /* Adjusted width for smaller grid items with even spacing */
+    text-align: center;
+    border: 1px solid #ddd; /* Subtle border */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.story img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensure images cover the area well */
+}
+
+.story h3 {
+    margin: 15px 0;
+    font-size: 18px; /* Modern, readable font size */
+}
+
+.story p {
+    padding: 0 15px 25px;
+}
+
+#story-name {
+    font-family: "Libre Baskerville", serif;
+  font-weight: bold;
+  
+}
+
+#story-genre{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+#story-explanation{
+    font-family: "Libre Baskerville", serif;
+    font-size: small;
+    font-weight: 300;
+    font-style: normal;
+}
+
+#story-trend {
+    font-family: "Libre Baskerville", serif;
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.story:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2); /* Enhanced shadow on hover */
+}
+
+#events-calendar {
+    flex: 1; /* Flexbox property to occupy remaining space */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color */
+    margin-left: 20px; /* Add space between the newsletter signup and events calendar */
+}
+
+#events-calendar h2 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.event {
+    margin-bottom: 20px;
+}
+
+.event h3 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.divider {
+    width: 1px; /* Width of the divider */
+    background-color: #ddd; /* Color of the divider */
+    margin: 0 20px; /* Margin on both sides of the divider */
+}
+
+.event p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    margin: 0;
+    color: #333; /* Dark text color */
+    padding: 5px;
+}
+
+#author-spotlight,
+#events-calendar {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+#author-spotlight {
+    font-family: "Libre Baskerville", serif;
+    padding: 5px;
+    font-size: 14px;
+}
+
+#author-spotlight {
+    line-height: 23px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5; /* Light footer background */
+    margin-top: 20px;
+}
+
+#copyright {
+    font-family: "Libre Baskerville", serif;
+    font-style: italic;
+    font-size: small;
+    font-weight: bold;
+}

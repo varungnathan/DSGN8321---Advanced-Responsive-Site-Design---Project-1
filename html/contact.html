@@ -1,0 +1,87 @@
+<!-- DSGN8321 - Advanced Responsive Site Design - Project 1 - AI
+Varun Gopinath - 8929281 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tale Trails - Home</title>
+    <link rel="icon" type="image/png" href="../img/favlogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+    <header>
+     <a href="home.html">   <img src="../img/logo-transparent.png" alt="Tale Trail Logo" id="logo"></a> 
+        <h1>Tale Trail</h1>
+    </header>    
+    <div class="hero">
+        <h2 id="intro">Contact Us</h2>
+    </div>
+    <nav>   
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./services.html">Our Services</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="website-info">
+            <h2>Do You Wanna Know More?</h2>
+            <p id="infoweb">Feel Free to contact us </p>
+        </section>
+        <div class="contact-container">
+            <section id="contact-form">
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <div class="form-row">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+            </section>
+            <div class="divider"></div>
+            <section id="contact-info">
+                <h2>Contact Information</h2>
+                <p><strong>Email:</strong> email@example.com</p>
+                <p><strong>Phone:</strong> +1234567890</p>
+                <p><strong>Address:</strong> 1234 Street, City, Country</p>
+                <div id="map-container">
+                    <h3>Our Location</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.976242180851!2d-118.40528578490511!3d34.06320262230079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c661e10f74c3%3A0x5468d8efcc07a9aa!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2suk!4v1649713283036!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </section>
+        </div>        
+    </div>
+    <h3 id="founder">Founder's Side</h3>
+    <div class="personalized-message">
+        <p>A note from our Founder, Ecabod: "We're thrilled you're considering reaching out. Your questions and feedback drive us forward! We're dedicated to providing exceptional service and support to our valued customers. Feel free to get in touch with us anytime."</p>
+    </div>
+    <div class="chatbot-icon" onclick="openChat()">
+        <span class="material-symbols-outlined">chat</span>
+    </div>    
+    </main>
+    <footer>
+        <p id="copyright">&copy; 2024 Tale Trail. All rights reserved. Varun Gopinath - 8929281</p>
+    </footer>
+</body>
+</html>
